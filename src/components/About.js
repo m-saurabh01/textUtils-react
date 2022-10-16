@@ -1,37 +1,42 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 export default function About(props) {
-  const [myCustom, setMyCustom] = useState({
-    color: 'black',
-    backgroundColor: 'white',
-    padding: '1vw',
-  })
-  const [btnText, setBtnText] = useState('Enable Dark mode')
+  // const [myCustom, setMyCustom] = useState({
+  //   color: 'black',
+  //   backgroundColor: 'white',
+  //   padding: '1vw',
+  // })
+  // const [btnText, setBtnText] = useState('Enable Dark mode')
 
-  const toggleStyle = () => {
-    if (myCustom.color === 'black') {
-      setMyCustom({
-        color: 'white',
-        backgroundColor: 'grey',
-      })
-      setBtnText('Disable Dark mode')
-    } else {
-      setMyCustom({
-        color: 'black',
-        backgroundColor: 'white',
-      })
-      setBtnText('Enable Dark mode')
-    }
-  }
+  // const toggleStyle = () => {
+  //   if (myCustom.color === 'black') {
+  //     setMyCustom({
+  //       color: 'white',
+  //       backgroundColor: 'grey',
+  //     })
+  //     setBtnText('Disable Dark mode')
+  //   } else {
+  //     setMyCustom({
+  //       color: 'black',
+  //       backgroundColor: 'white',
+  //     })
+  //     setBtnText('Enable Dark mode')
+  //   }
+  // }
 
   return (
     <>
-      <div className="container">
+      {/* <div className="container">
         <button className="btn btn-primary my-2" onClick={toggleStyle}>
           {btnText}
         </button>
-      </div>
-      <div className="container p-2" style={myCustom}>
+      </div>*/}
+      <div
+        className="container p-2"
+        style={{
+          color: props.mode === 'dark' ? 'white' : 'black',
+        }}
+      >
         <h4>{props.title}</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare
