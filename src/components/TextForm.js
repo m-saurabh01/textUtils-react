@@ -60,7 +60,7 @@ export default function TextForm(props) {
           />
         </div>
 
-        <button className="btn btn-primary mx-2" onClick={handleClick}>
+        <button className="btn btn-primary mx-2 my-1" onClick={handleClick}>
           UpperCase
         </button>
         <button className="btn btn-primary" onClick={handleClick2}>
@@ -70,16 +70,16 @@ export default function TextForm(props) {
         <button
           type="submit"
           onClick={speak}
-          className="btn btn-warning mx-2 my-2"
+          className="btn btn-warning mx-2 my-1"
         >
           Play
         </button>
 
-        <button onClick={reset} className="btn btn-primary">
+        <button onClick={reset} className="btn btn-primary mx-1 my-1">
           Stop
         </button>
 
-        <button onClick={handleReset} className="btn btn-primary mx-2">
+        <button onClick={handleReset} className="btn btn-primary mx-2 my-1">
           Clear Text
         </button>
       </div>
@@ -93,11 +93,20 @@ export default function TextForm(props) {
         <h1>Your text's summary</h1>
         <p>
           Your text has {text.length === 0 ? 0 : text.length} characters and{' '}
-          {text.length === 0 ? 0 : text.split(' ').length} words
+          {text.length === 0
+            ? 0
+            : text.split(' ').filter((elem) => {
+                return elem.length !== 0
+              }).length}{' '}
+          words
         </p>
 
         <p>
-          This document can be readed in {0.008 * text.split(' ').length}{' '}
+          This document can be readed in{' '}
+          {0.008 *
+            text.split(' ').filter((elem) => {
+              return elem.length !== 0
+            }).length}{' '}
           minutes
         </p>
 

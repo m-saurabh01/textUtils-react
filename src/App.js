@@ -48,7 +48,6 @@ function App() {
 
           <Routes>
             <Route
-              exact
               path="/"
               element={
                 <>
