@@ -50,6 +50,24 @@ export default function About(props) {
           Curabitur consectetur dolor libero, at aliquam est ornare eleifend.
           Aliquam at finibus dolor
         </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quod,
+          voluptatibus qui doloribus perspiciatis explicabo quasi? Molestiae hic
+          illo, voluptates earum officiis accusantium sunt atque mollitia illum
+          ullam sit laborum? Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Officia sequi magnam quae voluptate, rem neque ullam consectetur
+          rerum cumque minima ratione mollitia saepe minus culpa nesciunt
+          eligendi in quod! Voluptate. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Culpa officiis repudiandae, ab quae voluptates
+          dolorum at quod aliquid, doloremque veritatis totam. Magni nihil
+          deleniti labore facilis itaque. Reprehenderit, veritatis ea.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+          nostrum. Architecto eum error ipsam voluptate quas asperiores
+          repellendus vel, libero doloribus debitis dolorum odit soluta!
+          Quisquam natus ratione iusto tempora.
+        </p>
       </div>
     </>
   )

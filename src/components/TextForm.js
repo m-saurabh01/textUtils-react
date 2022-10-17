@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 
+
 export default function TextForm(props) {
   const [text, setText] = useState('')
+  
+  
 
   const handleClick = () => {
     let newText = text.toUpperCase()
@@ -89,8 +92,8 @@ export default function TextForm(props) {
       >
         <h1>Your text's summary</h1>
         <p>
-          Tour text has {text.length} characters and {text.split(' ').length}{' '}
-          words
+          Your text has {text.length === 0 ? 0 : text.length} characters and{' '}
+          {text.length === 0 ? 0 : text.split(' ').length} words
         </p>
 
         <p>
